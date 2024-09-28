@@ -26,6 +26,8 @@ jobs:
         run: npx playwright test --only-changed=$GITHUB_BASE_REF
       - name: Run Playwright tests
         run: npx playwright test
+        env:
+          HOME: /root
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
