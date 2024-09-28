@@ -1,0 +1,21 @@
+{
+  "name": "playwright_api_example",
+  "version": "1.0.0",
+  "description": "playwright example test framework",
+  "scripts": {
+    "test": "npx playwright test --trace on",
+    "test-playwright": "npx playwright test --trace on --grep @playwright-demo",
+    "test-saucedemo": "npx playwright test --trace on --grep @saucedemo",
+    "show-test-report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.6.1",
+    "playwright": "^1.47.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
